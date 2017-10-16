@@ -1,3 +1,7 @@
-$font-stack:    Courier, sans-serif;
-$primary-color: #333;
-$background-color: #efefef;
+.pf-container {
+  display: grid;
+}
+
+.pf-content {
+	padding:3vw;
+}

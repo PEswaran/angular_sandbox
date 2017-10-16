@@ -4,12 +4,7 @@ import { PeopleService } from '../people.service';
 
 @Component({
   selector: 'app-people-list',
-  template: `
-<p>
-people-list Works!
-</p>
-
-<ul>
+  template: `<ul>
 <li *ngFor="let person of people">
 <p (click)="showSelected(person)">{{person.name}}</p>
 </li>

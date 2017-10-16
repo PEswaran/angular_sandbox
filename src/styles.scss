@@ -1,8 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import '/assets/mediaQs';
 @import '/assets/variables';
 
+html {
+	box-sizing:border-box;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
 body {
-  font: 100% $font-stack;
-  background-color: $background-color;
-  text-color: $primary-color;
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: sans-serif;
+	padding: 0px;
+	margin:0px;
+}
+a {
+	color:black;
+	font-weight:bold;
+	text-decoration: none;
+}
+
+.pf-sidebar {
+	background-color:grey;
+	padding:5vw;
+	 justify-content:center;
+   align-items:center;
+   text-align:center;
+}
+
+.pf-grid-item {
+	background-color:grey;
+	padding:3vw;
 }

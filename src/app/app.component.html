@@ -1,44 +1,33 @@
-<header class="container-fluid">
-  <p>Header Text</p>
-</header>
+<div class="pf-container">
+    <app-sidebar-content></app-sidebar-content>
+<div class="pf-content">
+  <p> The star, who typically gives her opinion on the issues of the day and her life by way of her blog, changed things up a bit by publishing a lengthy op-ed in The New York Times about the Harvey Weinstein scandal, in which she condemned a culture that puts women in situations like the ones Weinstein’s accusers found themselves in. However, after including a portion about how she’s avoided Hollywood harassment for so long, many who read the piece are accusing her of blaming the victims for their own assaults. </p>
+  <h1> Services </h1>
+<div class="pf-grid">
 
-<div class="container-fluid">
-  <div class="row content">
-    <div class="col-sm-3 sidenav">
-      <h4>John's Blog</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="#section1">Home</a></li>
-        <li><a href="#section2">Friends</a></li>
-        <li><a href="#section3">Family</a></li>
-        <li><a href="#section3">Photos</a></li>
-      </ul><br>
-      
-    </div>
+<!--Adding Current Project git hub references located in the projects-content folder-->
+<div class="pf-grid-item">
+ <app-projects-content></app-projects-content>
+</div>
+<!--Adding Contact Information located in the contact-content folder-->
+<div class="pf-grid-item">
+  <app-contact-content> </app-contact-content>
+</div>
 
-    <div class="col-sm-9">
-    
-      <div class="row">
-        <div class="col-sm-6">        
-        
-             <app-people-list></app-people-list>
-          <br>
-        </div>
-     
-        <div class="col-sm-6"> 
-        <h4>Selected</h4>
-<div *ngIf="selected">
-<p><strong>{{selected.name}}</strong></p>
-</div>       
-       {{title}}
-          <br>
-        </div>
-      
- </div>
+  <div class="pf-grid-item">
+   <app-peeves-content></app-peeves-content>
+  </div>
+   <div class="pf-grid-item">
+ <app-tech-news-content></app-tech-news-content>
 
-    </div>
+  </div>
+   <div class="pf-grid-item">
+   <app-social-content></app-social-content>
   </div>
 </div>
 
-<footer class="container-fluid">
-  <p>Footer Text</p>
-</footer>
+</div>
+</div>
+
+
+ 

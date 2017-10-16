@@ -1,0 +1,108 @@
+@media(min-width:768px) {
+  .container-1 {
+    display: flex;
+    /* align-items:flex-start;
+    align-items:flex-end;
+   align-items:flex-center;
+    flex-direction:column;*/
+    flex-direction: row;
+  }
+  .container-2 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.container-3{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.container-1 div, 
+.container-2 div,
+.container-3 div {
+  border: $border-styles;
+  padding: 10px;
+}
+
+.box-1 {
+  flex: 2;
+  order:2;
+}
+
+
+.box-2 {
+  flex: 1;
+  order:1;
+}
+
+.box-3 {
+  flex: 1;
+  order:3
+}
+
+.container-2-box,
+{
+  flex-basis:25%;
+}
+.container-3-box,
+{
+  flex-basis:15%;
+}
+
+<div class="container-1">
+  <div class="box-1">
+    <h3>box one</h3>
+    <p> content one In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="box-2">
+    <h3>box two</h3>
+    <p> content 2 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="box-3">
+    <h3>box three</h3>
+    <p> content 3 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+</div>
+
+<div class="container-2">
+  <div class="container-2-box">
+    <h3>box one</h3>
+    <p> content one In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-2-box">
+    <h3>box two</h3>
+    <p> content 2 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-2-box">
+    <h3>box three</h3>
+    <p> content 3 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+</div>
+<div class="container-3">
+  <div class="container-3-box">
+    <h3>box 3one</h3>
+    <p> content one In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-3-box">
+    <h3>box 3two</h3>
+    <p> content 2 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-3-box">
+    <h3>box 3three</h3>
+    <p> content 3 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+   <div class="container-3-box">
+    <h3>box 3four</h3>
+    <p> content one In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-3-box">
+    <h3>box 3five</h3>
+    <p> content 2 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+  <div class="container-3-box">
+    <h3>box 3six</h3>
+    <p> content 3 In this quick video we will go over the CSS Flexbox model. This is a quick overview, not an in-depth course. We will look at the basics such as</p>
+  </div>
+</div>
