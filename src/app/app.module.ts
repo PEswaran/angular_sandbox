@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule} from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { PeopleListComponent } from './people-list/people-list.component';
@@ -11,6 +12,7 @@ import { ContactContentComponent } from './contact-content/contact-content.compo
 import { PeevesContentComponent } from './peeves-content/peeves-content.component';
 import { SocialContentComponent } from './social-content/social-content.component';
 import { TechNewsContentComponent } from './tech-news-content/tech-news-content.component';
+import { NewsService } from './news.service';
 
 @NgModule({
   declarations: [
@@ -25,9 +27,9 @@ import { TechNewsContentComponent } from './tech-news-content/tech-news-content.
     TechNewsContentComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, HttpModule
   ],
-  providers: [PeopleService],
+  providers: [PeopleService, NewsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

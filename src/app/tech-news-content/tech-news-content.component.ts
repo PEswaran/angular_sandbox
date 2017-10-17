@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Http, Response } from '@angular/http';
 
 @Component({
   selector: 'app-tech-news-content',
@@ -6,10 +7,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tech-news-content.component.scss']
 })
 export class TechNewsContentComponent implements OnInit {
+  constructor( private http :Http) {}
 
-  constructor() { }
+  ngOnInit() :void {
+  	this.http.get('https://api.github.com/users/peswaran').subscribe(
+      (data) => {
+     const showme = data.json()
+      console.log(showme.login);
+     
+    })
 
-  ngOnInit() {
   }
 
 }
+
