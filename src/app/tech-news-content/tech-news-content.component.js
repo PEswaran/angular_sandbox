@@ -11,20 +11,12 @@ var TechNewsContentComponent = (function () {
     function TechNewsContentComponent(http) {
         this.http = http;
     }
-    TechNewsContentComponent.prototype.searchMe = function () {
+    TechNewsContentComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.http.get('https://api.github.com/users/peswaran').subscribe();
-        return request
-            .map(function (res) { return res.json(); })
-            .catch(function (error) {
-            // todo: log?
-            if (error.status == 500) {
-                _this.alertService.showError(error.statusText);
-            }
-            else if (error.status == 588) {
-                _this.alertService.showAlert(error.statusText);
-            }
-            return Observable.throw(error.statusText);
+        this.http.get('https://api.github.com/users/peswaran').subscribe(function (data) {
+            var showme = data.json();
+            _this.showme = showme;
+            console.log(showme);
         });
     };
     TechNewsContentComponent = __decorate([
